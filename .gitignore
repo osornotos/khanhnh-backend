@@ -1,0 +1,16 @@
+.idea
+*.log
+.DS_Store
+
+venv
+report.html
+log.html
+output.xml
+coverage.out
+
+docker/*
+ipo-service
+__debug_bin
+
+*.xml
+*.xlsx

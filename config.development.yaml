@@ -1,0 +1,90 @@
+version: 1.0.0
+port: 8080
+env: local
+debug: true
+
+# do not edit
+postgres:
+  host: "localhost:5432"
+  user: "postgres"
+  password: "123456"
+  database: "postgres"
+  poolSize: 20
+
+auth:
+  jwtPublicKey: |
+    -----BEGIN PUBLIC KEY-----
+    MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtj31QdRR/pLZ7upxQ9VY
+    ldsqt3ZRHLttseFcxOVUdaWFEpF5pHG/vCZflX1HhYkoY4mKBbX67AtKccAt9uhi
+    G6a0q8zhyCkYcCU7D2Db0OLTYYQaciDoxJmEGNje6gqb+kccHpT7E34DnjpA2BVz
+    xaeiwDMMpJBlTDrDqynHUizejG5SGBBtua0/KsXli5FDXPOvi23Kxd8NDxAp7s14
+    JP9VV/T3q7plhcLTT6OOBJvXtqUFECHKkK22EKd/gA7bDMKhvZwnafdKSK/lsBd2
+    YspVWvVGOEOVwvkgaGjSU7zMmVaAsxqoGSm/H32Qx1yGs5QzsOsPLAcQ1zKP6ZMA
+    l1kMJFExnRcjmeshHDj3xf+elYSb3yFk9ZgP1lT00hcBpVDUNdDu+SkTmgVeUKLJ
+    qMn7l8ghfRfiDH7+Ca/u5DH2sTBkCV2ZbrVCMJGm+Ry/XkF5dUPZdf4GXh3tvp3C
+    WC4a+LWioQXTkYdWekmqZJ8XiA/86EH+Z6IScR/lKHE5cm0/B4BToZWEnYUOjFSd
+    YqBJdC27QCvh2veA8dk5693ft9UMSxnQNeoXQ8PQxLi2HA86w2PXhTgJvJhD58d5
+    Mfy3ukhFRKvMCSDyfCuf+97/XD7ZpYOnlOlL7jruik1gyKW8cmtccNGFPJbE8Uk1
+    EujWZ3hiO8veB3IYVQDfltcCAwEAAQ==
+    -----END PUBLIC KEY-----
+  jwtPrivateKey: |
+    -----BEGIN PRIVATE KEY-----
+    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
+    IeH4KRNgcdOPvhf9w1yq/AwGOgLW
+    -----END PRIVATE KEY-----
+
+redis:
+  useSentinel: false
+  host: localhost:6379
+  masterName:
+  sentinelPassword:
+  password:
+  database: 5
