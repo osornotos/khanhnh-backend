@@ -1,13 +1,13 @@
 package service
 
 import (
+	"backend/internal/domain/auth"
 	"context"
 	"github.com/stretchr/testify/mock"
-	"khanhnh-backend/internal/domain/auth"
 	"testing"
 
+	"backend/tests/mocks"
 	"github.com/stretchr/testify/assert"
-	"khanhnh-backend/tests/mocks"
 )
 
 func TestUserServiceImpl_Login(t *testing.T) {

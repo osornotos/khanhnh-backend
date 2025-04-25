@@ -1,8 +1,8 @@
 package controller
 
 import (
+	"backend/internal/application/interface"
 	"github.com/gofiber/fiber/v2"
-	"khanhnh-backend/internal/application/interface"
 	"net/http"
 )
 

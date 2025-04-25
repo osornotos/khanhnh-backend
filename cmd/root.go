@@ -1,8 +1,8 @@
 package cmd
 
 import (
+	"backend/internal"
 	"io"
-	"khanhnh-backend/internal"
 	"os"
 	"strconv"
 	"strings"
@@ -17,7 +17,7 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:   "run",
-	Short: "khanhnh-backend",
+	Short: "backend",
 	Long:  ``,
 }
 

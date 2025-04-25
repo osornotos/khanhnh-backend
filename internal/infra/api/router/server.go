@@ -1,6 +1,8 @@
 package router
 
 import (
+	"backend/internal"
+	"backend/wire"
 	"context"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/helmet"
@@ -8,8 +10,6 @@ import (
 	"github.com/gofiber/fiber/v2/middleware/recover"
 	"github.com/gofiber/fiber/v2/middleware/requestid"
 	"github.com/rs/zerolog/log"
-	"khanhnh-backend/internal"
-	"khanhnh-backend/wire"
 	"os"
 	"os/signal"
 	"syscall"

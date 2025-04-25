@@ -3,8 +3,8 @@
 package mocks
 
 import (
+	_interface "backend/internal/application/interface"
 	context "context"
-	_interface "khanhnh-backend/internal/application/interface"
 
 	mock "github.com/stretchr/testify/mock"
 

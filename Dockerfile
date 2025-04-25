@@ -18,7 +18,7 @@ COPY . .
 # RUN go test ./... -v
 
 # Build the binary (build main.go from root directory)
-RUN CGO_ENABLED=0 go build -o /app/khanhnh-backend .
+RUN CGO_ENABLED=0 go build -o /app/backend .
 
 # Stage 2: Final image
 FROM alpine:3.20
@@ -29,7 +29,7 @@ RUN apk add --no-cache tzdata
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 
 # Copy the binary from the builder stage
-COPY --from=builder /app/khanhnh-backend /app/khanhnh-backend
+COPY --from=builder /app/backend /app/backend
 
 # Copy additional files
 COPY config.yaml /app/config.yaml
@@ -44,4 +44,4 @@ EXPOSE 8080
 # Run as non-root user
 USER appuser
 
-ENTRYPOINT ["/app/khanhnh-backend"]
+ENTRYPOINT ["/app/backend"]

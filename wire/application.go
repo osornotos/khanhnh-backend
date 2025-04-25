@@ -1,6 +1,13 @@
 package wire
 
 import (
+	"backend/internal"
+	"backend/internal/application/interface"
+	"backend/internal/application/service"
+	"backend/internal/infra/auth"
+	"backend/internal/infra/cryptox/hashing"
+	"backend/internal/infra/repository"
+	service2 "backend/internal/infra/service"
 	"context"
 	"database/sql"
 	"fmt"
@@ -10,13 +17,6 @@ import (
 	"github.com/uptrace/bun"
 	"github.com/uptrace/bun/dialect/pgdialect"
 	"github.com/uptrace/bun/driver/pgdriver"
-	"khanhnh-backend/internal"
-	"khanhnh-backend/internal/application/interface"
-	"khanhnh-backend/internal/application/service"
-	"khanhnh-backend/internal/infra/auth"
-	"khanhnh-backend/internal/infra/cryptox/hashing"
-	"khanhnh-backend/internal/infra/repository"
-	service2 "khanhnh-backend/internal/infra/service"
 	"time"
 )
 

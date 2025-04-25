@@ -1,8 +1,8 @@
 package repository
 
 import (
+	"backend/internal/domain/model"
 	"context"
-	"khanhnh-backend/internal/domain/model"
 )
 
 type Filter struct {

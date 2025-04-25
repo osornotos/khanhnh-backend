@@ -1,7 +1,7 @@
 package main
 
 import (
-	"khanhnh-backend/cmd"
+	"backend/cmd"
 )
 
 func main() {

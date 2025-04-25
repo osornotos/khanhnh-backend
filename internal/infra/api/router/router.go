@@ -1,14 +1,14 @@
 package router
 
 import (
+	"backend/internal"
+	"backend/internal/infra/api/controller"
+	"backend/internal/infra/middleware"
+	"backend/wire"
 	"context"
 	"encoding/json"
 	"fmt"
 	"github.com/gofiber/fiber/v2"
-	"khanhnh-backend/internal"
-	"khanhnh-backend/internal/infra/api/controller"
-	"khanhnh-backend/internal/infra/middleware"
-	"khanhnh-backend/wire"
 	"net/http"
 	"time"
 
@@ -53,7 +53,7 @@ func (r *Router) Stop() {
 func (r *Router) WireRoot(cfg internal.Config) {
 	r.app.Get("/", func(ctx *fiber.Ctx) error {
 		return ctx.Status(http.StatusOK).JSON(fiber.Map{
-			"app":     "khanhnh-backend",
+			"app":     "backend",
 			"version": cfg.Version,
 		})
 	})

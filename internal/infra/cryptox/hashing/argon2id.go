@@ -1,12 +1,12 @@
 package hashing
 
 import (
+	"backend/internal/domain/auth"
 	"crypto/subtle"
 	"encoding/base64"
 	"errors"
 	"fmt"
 	"golang.org/x/crypto/argon2"
-	"khanhnh-backend/internal/domain/auth"
 	"strings"
 )
 

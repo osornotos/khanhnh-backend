@@ -1,9 +1,9 @@
 package _interface
 
 import (
+	"backend/internal/application/model"
+	"backend/internal/domain/repository"
 	"context"
-	"khanhnh-backend/internal/application/model"
-	"khanhnh-backend/internal/domain/repository"
 	"time"
 )
 

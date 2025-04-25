@@ -1,13 +1,13 @@
 package repository
 
 import (
+	"backend/internal/domain/model"
+	"backend/internal/domain/repository"
+	model2 "backend/internal/infra/model"
 	"context"
 	"database/sql"
 	"github.com/pkg/errors"
 	"github.com/uptrace/bun"
-	"khanhnh-backend/internal/domain/model"
-	"khanhnh-backend/internal/domain/repository"
-	model2 "khanhnh-backend/internal/infra/model"
 	"time"
 )
 

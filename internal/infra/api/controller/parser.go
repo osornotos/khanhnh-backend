@@ -1,9 +1,9 @@
 package controller
 
 import (
+	"backend/internal"
+	"backend/internal/infra/util"
 	"github.com/gofiber/fiber/v2"
-	"khanhnh-backend/internal"
-	"khanhnh-backend/internal/infra/util"
 )
 
 type transformFn[T any] func(*T) error

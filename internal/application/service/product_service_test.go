@@ -1,14 +1,14 @@
 package service
 
 import (
+	"backend/internal/domain/repository"
 	"context"
-	"khanhnh-backend/internal/domain/repository"
 	"testing"
 
+	model2 "backend/internal/application/model"
+	"backend/internal/domain/model"
+	"backend/tests/mocks"
 	"github.com/stretchr/testify/assert"
-	model2 "khanhnh-backend/internal/application/model"
-	"khanhnh-backend/internal/domain/model"
-	"khanhnh-backend/tests/mocks"
 )
 
 func TestProductServiceImpl_Get(t *testing.T) {

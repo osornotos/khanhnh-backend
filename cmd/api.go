@@ -1,9 +1,9 @@
 package cmd
 
 import (
+	"backend/internal/infra/api/router"
+	"backend/wire"
 	"github.com/spf13/cobra"
-	"khanhnh-backend/internal/infra/api/router"
-	"khanhnh-backend/wire"
 )
 
 var apiCmd = &cobra.Command{

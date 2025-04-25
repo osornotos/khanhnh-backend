@@ -24,7 +24,7 @@ func TestCacheServiceImpl_GetKey(t *testing.T) {
 	defer teardown()
 
 	key := "test-key"
-	expected := "khanhnh:test-key"
+	expected := "backend:test-key"
 	assert.Equal(t, expected, cacheService.GetKey(key))
 }
 

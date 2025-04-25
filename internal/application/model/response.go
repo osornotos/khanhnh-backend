@@ -1,7 +1,7 @@
 package model
 
 import (
-	"khanhnh-backend/internal/domain/model"
+	"backend/internal/domain/model"
 	"time"
 )
 

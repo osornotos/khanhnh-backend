@@ -1,8 +1,8 @@
 package service
 
 import (
+	"backend/internal/domain/auth"
 	"context"
-	"khanhnh-backend/internal/domain/auth"
 )
 
 type UserServiceImpl struct {

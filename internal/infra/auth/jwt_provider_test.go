@@ -1,9 +1,9 @@
 package auth
 
 import (
+	"backend/internal/domain/auth"
 	"context"
 	"github.com/rs/zerolog/log"
-	"khanhnh-backend/internal/domain/auth"
 	"testing"
 )
 

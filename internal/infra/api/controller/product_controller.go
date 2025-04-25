@@ -1,12 +1,12 @@
 package controller
 
 import (
+	"backend/internal/application/interface"
+	"backend/internal/application/model"
+	"backend/internal/domain/repository"
 	"context"
 	"github.com/gofiber/fiber/v2"
 	"github.com/rs/zerolog/log"
-	"khanhnh-backend/internal/application/interface"
-	"khanhnh-backend/internal/application/model"
-	"khanhnh-backend/internal/domain/repository"
 	"net/http"
 )
 

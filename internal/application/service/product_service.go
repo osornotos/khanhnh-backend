@@ -1,14 +1,14 @@
 package service
 
 import (
+	"backend/internal/application/interface"
+	model2 "backend/internal/application/model"
+	"backend/internal/domain/model"
+	"backend/internal/domain/repository"
 	"context"
 	"fmt"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"
-	"khanhnh-backend/internal/application/interface"
-	model2 "khanhnh-backend/internal/application/model"
-	"khanhnh-backend/internal/domain/model"
-	"khanhnh-backend/internal/domain/repository"
 	"math/rand"
 	"sync"
 	"time"

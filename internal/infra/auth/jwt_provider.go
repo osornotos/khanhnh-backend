@@ -1,9 +1,9 @@
 package auth
 
 import (
+	"backend/internal/domain/auth"
 	"context"
 	"crypto/rsa"
-	"khanhnh-backend/internal/domain/auth"
 
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/pkg/errors"

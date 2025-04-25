@@ -1,11 +1,11 @@
 package service
 
 import (
+	"backend/internal/application/interface"
 	"encoding/json"
 	"fmt"
 	"github.com/bsm/redislock"
 	"github.com/redis/go-redis/v9"
-	"khanhnh-backend/internal/application/interface"
 	"time"
 
 	"context"
@@ -23,10 +23,10 @@ func NewCacheServiceImpl(client *redis.Client) *CacheServiceImpl {
 	}
 }
 
-const KhanhnhPrefix = "khanhnh"
+const BackendPrefix = "backend"
 
 func (c *CacheServiceImpl) GetKey(key string) string {
-	return fmt.Sprintf("%v:%v", KhanhnhPrefix, key)
+	return fmt.Sprintf("%v:%v", BackendPrefix, key)
 }
 
 func (c *CacheServiceImpl) Get(ctx context.Context, key string, result interface{}) error {

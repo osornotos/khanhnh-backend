@@ -1,9 +1,9 @@
 package middleware
 
 import (
+	"backend/internal"
+	"backend/internal/domain/auth"
 	"github.com/gofiber/fiber/v2"
-	"khanhnh-backend/internal"
-	"khanhnh-backend/internal/domain/auth"
 	"strings"
 )
 

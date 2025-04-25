@@ -1,8 +1,8 @@
 package middleware
 
 import (
+	"backend/internal"
 	"github.com/gofiber/fiber/v2"
-	"khanhnh-backend/internal"
 )
 
 func ErrorHandler(ctx *fiber.Ctx, err error) error {
